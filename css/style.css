@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: "Edu SA Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.myheader {
+    background-image: url(../assets_day1/img/wall.png);
+    height: 150px;
+}
+
+.myheader-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+
+}
+
+.mymain {
+    background-image: url(../assets_day1/img/cork.png);
+    height: 900px;
+}
+
+.mycontainer {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col {
+    margin-top: 20px;
+    background-color: white;
+    width: calc((100% - 40px) / 3);
+    border: 1px solid black;
+    min-height: 200px;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 15px;
+}
+
+.svg {
+    position: absolute;
+    height: 35px;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 800px){
+    .col{
+        width: calc((100% - 20px) / 2);
+    }
+
+    .mymain{
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .col{
+        width: calc(100% / 1);
+    }
+
+    .mymain{
+        height: 2500px;
+    }
+}
