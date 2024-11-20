@@ -2,7 +2,7 @@ let cards = {};
 let cardItem = "";
 const rowElem = document.querySelector(".row");
 
-const rendereCard = () => {
+const renderCard = () => {
     axios
         .get(`https://jsonplaceholder.typicode.com/photos?_limit=6`)
         .then(resp => {
@@ -27,4 +27,4 @@ const rendereCard = () => {
         })
 }
 
-rendereCard();
+renderCard();
